@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.faq-item {
+	border: 1px solid #757679;
+	background-color: #fff;
+	margin-bottom: 0px;
+	border-radius: 1px;
+	overflow: hidden;
+}
+
+.faq-question {
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 12pt;
+	padding: 10px 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	background-color: #e0e0e0;
+	flex-direction: row-reverse;
+}
+
+.faq-question .plus {
+    font-weight: normal;
+}
+
+.action-icons {
+    display: none;
+    text-align: left;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.action-icon:first-child {
+    margin-left: 0;
+}
+
+.action-icon {
+    color: #62BFB6;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+.action-icon:hover {
+    transform: scale(1.2);
+    color: #0A326B;
+}
+
+.faq-answer {
+    font-family: Arial;
+    font-size: 12pt;
+    color: black;
+    padding: 10px 10px;
+    display: none;
+    border-top: 1px solid #ddd;
+    line-height: 2.0;
+}
+
+.faq-answer ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.faq-answer ul li::before {
+    content: "•";
+    color: #62BFB6;
+    margin-right: 8px;
+}
+
+.highlight-star {
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+    background-color: #62BFB6;
+    padding: 2px 4px;
+}
+
+.highlight-blue {
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+    background-color: #0A326B;
+    padding: 2px 4px;
+}
+
+.highlight-hash {
+    font-weight: normal;
+    font-size: 12pt;
+    color: black;
+    background-color: #62BFB6;
+    padding: 2px 4px;
+}
+
+.highlight-section {
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+    background-color: #0A326B;
+    padding: 2px 4px;
+}
+
+.highlight-green {
+    font-weight: bold;
+    font-size: 12pt;
+    color: #007372;
+    padding: 2px 4px;
+}
+
+.svg-img {
+    width: auto;
+    height: 30px;
+  vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.svg-img:hover {
+    transform: scale(3);
+}

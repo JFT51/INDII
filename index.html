@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>window.jspdf = window.jsPDF = jspdf;</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <h1><img src="titel.svg" height="50px" alt="faq"></h1>
+  
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Comment donner un contrat à mon employé ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Étape 1</b></p>
+      <ul>
+        <li>Cliquez sur l’icône de vos employés <i><img src="personeel.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche</li>
+        <li>Sélectionnez le nom de l’employé et cliquez à droite sur <i><img src="oog.svg" class="svg-img" alt="Icon"></i></li>
+      </ul>
+      <p><b>Étape 2</b></p>
+      <ul>
+        <li>Sélectionnez l’onglet <span class="highlight-hash">Emploi</span> en haut</li>
+        <li>Cliquez sur <span class="highlight-star">Créer un Contrat</span></li>
+        <li>Choisissez le type de contrat (long terme, journalier, externe ou intérim)</li>
+        <li>Indiquez le type d’employé (étudiant, flexi, extra,…)</li>
+        <li>Entrez la date de début de l’emploi (éventuellement une date de fin)</li>
+        <li>Cliquez sur <span class="highlight-star">Suivant</span> en bas à droite</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Comment archiver un employé ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>
+        <li>Cliquez sur l’icône de vos employés <i><img src="personeel.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche</li>
+        <li>Tapez le nom de l’employé dans la barre de recherche <i><img src="zoek.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez la flèche vers le bas à droite <i><img src="archiefdown.svg" class="svg-img" alt="Icon"></i> pour archiver </li>
+        <li>Si vous souhaitez réactiver un employé, sélectionnez le bouton <i><img src="archief.svg" class="svg-img" alt="Icon"></i> en haut à droite</li>
+        <li>Vous verrez tous les employés archivés et pouvez les réactiver avec la flèche vers le haut <i><img src="archiefup.svg" class="svg-img" alt="Icon"></i></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Ajouter des employés au centre de coûts <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>
+        <li>Cliquez sur Entreprises <i><img src="bedrijven.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche</li>
+        <li>Cliquez sur details <i><img src="details.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez l’onglet <span class="highlight-hash">Centre de coût</span> en haut</li>
+        <li>Sélectionnez en haut à droite <span class="highlight-section">€ Ajouter centre de coût</span></li>
+        <li>Remplissez toutes les informations et cliquez sur <span class="highlight-star">Sauvegarder</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Connexion des employés via téléphone <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Étape 1</b></p>
+      <ul>
+        <li>Téléchargez l’application INDII 2.0 <i><img src="indii20.svg" class="svg-img" alt="Icon"></i> via Apple Store <i><img src="applestore.svg" class="svg-img" alt="Icon"></i> ou Google Play <i><img src="googleplay.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Acceptez toutes les autorisations comme l’accès à la caméra, notifications, etc.</li>
+        <li>Ouvrez l’application et entrez vos identifiants de connexion (reçus par e-mail automatique de INDII). Si ce n’est pas le cas, contactez votre employeur. Celui-ci peut vous les renvoyer.</li>
+        <li><span class="highlight-green">Attention aux majuscules !</span></li>
+      </ul>
+      <p><b>Étape 2</b></p>
+      <ul>
+        <li>Via le bouton scan <i><img src="scan.svg" class="svg-img" alt="Icon"></i> sur le tableau de bord en bas vous pouvez scanner le QR code pour vous enregistrer en entrée et en sortie.</li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Résumé mensuel & export vers le secrétariat social
+<span class="plus">></span></div>
+    <div class="faq-answer">
+Lorsque vous importez les employés sur la plateforme de votre secrétariat social, il est très important que chaque employé ait un numéro attribué.<br>
+Vous pouvez le faire en accédant au profil de l’employé et en remplissant dans la section <span class="highlight-section">Informations supplémentaires</span> le numéro du secrétariat social.
+      <p><b>Étape 1</b></p>
+      <ul>
+        <li>Sélectionnez l’icône du bilan mensuel <i><img src="maandoverzicht.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Entrez la date de début et de fin (il est important qu’elle commence un lundi)</li>
+        <li>Vous devrez peut-être encore <span class="highlight-star">Approuver</span> certaines heures de fin des employés (indiquées par un compteur rouge)</li>
+        <li>Cliquez sur <span class="highlight-star">Chercher</span> pour charger toutes les données</li>	
+      </ul>
+      <p><b>Étape 2</b></p>
+      <ul>
+        <li>Via l’icône <i><img src="oog.svg" class="svg-img" alt="Icon"></i> vous pouvez voir les détails par employé et apporter des modifications aux heures</li>
+        <li>Si aucune modification n’est nécessaire, vous pouvez faire une <span class="highlight-star">Exportation</span></li>
+        <li>Sélectionnez une date de début et de fin (elle peut commencer le 1er du mois)</li>
+        <li>Choisissez entre <span class="highlight-star">Exporter En Excel</span> ou un <span class="highlight-star">Dossier Pour Le Secrétariat Social</span></li>
+        <li>Le fichier sera téléchargé et vous le trouverez dans vos téléchargements de votre ordinateur</li>
+      </ul>
+    </div>
+  </div> 
+
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Un employé oublie de s’enregistrer en entrée ou en sortie <span class="plus">></span></div>
+    <div class="faq-answer">
+<span class="highlight-green">En tant que manager, vous pouvez enregistrer les employés à tout moment.</span>
+<p><b>Option 1</b></p>
+      <ul>
+        <li>Allez dans votre planning <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez le bouton <span class="highlight-star">Mois</span> <span class="highlight-star">Semaine</span> <span class="highlight-blue">Jour</span></li>
+        <li>Cliquez sur la barre verte de l’employé <i><img src="balk.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur <span class="highlight-star">Démarrer le planning</span></li> 
+Si l’employé a déjà commencé, seul un bouton <span class="highlight-star">Stop plan</span> ou <span class="highlight-star">Start break</span> apparaîtra</li>	
+      </ul>
+      <p><b>Option 2</b></p>
+      <ul>
+        <li>Ouvrez l’application sur votre téléphone</li>
+        <li>Appuyez sur le bouton Start/Stop <i><img src="startstop.svg" class="svg-img" alt="Icon"></i> en bas</li>
+        <li>Cliquez sur l’icône Play <i><img src="start.svg" class="svg-img" alt="Icon"></i> pour démarrer l’employé</li>
+        <li>Cliquez sur l’icône Stop <i><img src="stop.svg" class="svg-img" alt="Icon"></i> pour arrêter l’employé</li>
+      </ul>
+    </div>
+  </div>
+  
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Créer un nouvel employé <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Option 1</b></p>
+      <ul>
+        <li>Allez sur le tableau de bord et sélectionnez Création d'un nouvel employé <i><img src="aanmaakwn.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Entrez toutes les informations correctement !</li>
+<span class="highlight-green">➔ Numéro de registre national avec des points et un tiret</span><br>
+<span class="highlight-green">➔ Numéro de compte bancaire avec des points et BE</span><br>
+<span class="highlight-green">➔ Trajet domicile-travail sans virgules</span><br>
+<span class="highlight-green">➔ Numéro de téléphone avec +32</span>
+      </ul>
+      <p><b>Option 2</b></p>
+      <ul>
+        <li>Allez sur le tableau de bord et sélectionnez Envoyer le lien au nouvel employé </li>
+        <li>Envoyez un lien au nouvel employé <i><img src="linkwn.svg" class="svg-img" alt="Icon"></i></li>
+        <li>L’employé peut remplir ses informations personnelles à l’avance. Une fois cela fait, vous recevrez un e-mail pour finaliser le contrat.</li>
+        <li>Vous pouvez ensuite, via le même bouton (envoyer un lien au nouvel employé), choisir de remplir les étapes suivantes <i><img src="kandidaat.svg" class="svg-img" alt="Icon"></i></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Travaux de maintenance chez l’administration en ligne <span class="plus">></span></div>
+    <div class="faq-answer">
+<b>Les dates des travaux de maintenance peuvent être trouvées sur le site de <a href="https://www.socialsecurity.be/site_fr/employer/general/eventsCalendar/index.htm" target="_blank">la Sécurité Sociale</a>.<br>
+En tant que dirigeant, vous devez en tenir compte.<br>
+Notez donc ces dates dans votre calendrier !<br>
+Dans INDII, il existe une option pour envoyer la déclaration à l’avance, ce qui évite d’éventuels problèmes le jour même.<br>
+Suivez ces étapes pour envoyer vos déclarations DIMONA avec succès.</b>
+      <ul>
+        <li>Allez dans votre planning <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez Envoyer Dimona <i><img src="dimona.svg" class="svg-img" alt="Icon"></i> en haut à droite</li>
+        <li>Sélectionnez la date des travaux de maintenance</li>
+        <li>Indiquez les employés dont vous souhaitez envoyer la DIMONA</li>
+        <li>Cliquez sur <span class="highlight-star">Envoyer</span></li>
+➔ La DIMONA est envoyée selon le planning</li>
+      </ul>
+    </div>
+  </div>
+  
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Créer un planning et/ou ajouter un employé dans le planning <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Étape 1</b></p>
+      <ul>
+        <li>Allez dans votre planning <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez un lieu si vous en avez plusieurs</li>
+        <li>Sélectionnez le bouton <span class="highlight-star">Mois</span> <span class="highlight-blue">Semaine</span> <span class="highlight-star">Jour</span></li>
+        <li>Pour planifier selon les disponibilités, vous pouvez activer le bouton "Indiquez vos disponibilités" <i><img src="beschikaarheden.svg" class="svg-img" alt="Icon"></i></li>	
+      </ul>
+      <p><b>Étape 2</b></p>
+      <ul>
+        <li>Sélectionnez dans la première colonne via le <b>+</b> pour obtenir un menu déroulant afin de choisir vos employés <i><img src="kiezen.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Choisissez un employé dans la liste</li>
+        <li>Cliquez sur une case vide</li>
+        <li>Une pop-up apparaîtra</li>
+        <li>Vous pouvez maintenant entrer l’heure de début et de fin</li>
+        <li>Si vous souhaitez planifier plusieurs jours avec les mêmes heures, vous pouvez cocher "Sélectionner pour plusieurs jours"</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Comment renvoyer les identifiants de connexion de mon employé ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>
+        <li>Cliquez sur l’icône de vos employés dans la colonne de gauche <i><img src="personeel.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez le nom de l’employé et cliquez à droite sur <i><img src="oog.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur l’icône <i><img src="details.svg" class="svg-img" alt="Icon"></i> à droite et choisisez "Renvoyer les données d'accès"</li>
+        <li>L’employé peut réinitialiser son mot de passe automatiquement via l’application</li>
+        <li>Le nom d’utilisateur est toujours le prénom et le nom (sans majuscules)</li>
+      </ul>
+    </div>
+  </div>
+  
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Ajouter des absences dans le planning <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Option 1 : via la plateforme</b></p>
+      <ul>
+        <li>Allez dans votre planning <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur un jour où un employé est planifié <i><img src="dagvb.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Appuyez sur l’icône de la porte <i><img src="deur.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez le code d’absence et ajoutez éventuellement une raison</li>	
+      </ul>
+      <p><b>Option 2 : via l'Appli</b></p>
+      <ul>
+        <li>Allez dans le planning via le tableau de bord <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur l’icône de la porte à côté du nom de l’employé <i><img src="deurg.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Entrez les informations d’absence et appuyez sur "Ajouter l'absence"</li>
+      </ul>
+    </div>
+  </div>	
+
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Modifier les informations personnelles de mes employés <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Option 1 : via la plateforme</b></p>
+      <ul>
+        <li>Allez dans votre planning <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur un jour où un employé est planifié <i><img src="dagvb.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Appuyez sur l’icône de la porte <i><img src="deur.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez le code d’absence et ajoutez éventuellement une raison</li>	
+      </ul>
+      <p><b>Option 2 : via l'Appli</b></p>
+      <ul>
+        <li>Allez dans le planning via le tableau de bord <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur l’icône de la porte à côté du nom de l’employé <i><img src="deurg.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Entrez les informations d’absence et appuyez sur "Ajouter l'absence"</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Où puis-je trouver les disponibilités de mes employés ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Option 1 : via la plateforme</b></p>
+      <ul>
+        <li>Allez dans votre planning <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Si vos employés sont ajoutés au centre de coûts, vous pouvez indiquer les disponibilités via ce bouton <i><img src="beschikaarheden.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Vous pouvez également voir qui est disponible chaque jour via l’icône en haut à droite de votre planning <i><img src="check.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Vous pouvez filtrer par disponibilité, ceux qui sont disponibles apparaîtront en premier dans la liste <i><img src="beschikaar.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Via le bouton d’action <i><img src="aktie.svg" class="svg-img" alt="Icon"></i> vous pouvez les ajouter directement au planning</li>	
+      </ul>
+      <p><b>Option 2 : via l'Appli</b></p>
+      <ul>
+        <li>Allez vers vos employés en bas de l’application <i><img src="werknemers.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur le nom de l’employé</li>
+        <li>Sélectionnez l’onglet "Disponibilité" <i><img src="beschikaarheid.svg" class="svg-img" alt="Icon"></i></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Comment activer mon appareil ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>
+        <li>Connectez-vous avec votre nom d’utilisateur et mot de passe via <a href="https://apps.indii.be" target="_blank">apps.indii.be</a></li>
+        <li>Cliquez sur la tuile "Activer cet appareil" <i><img src="activeer.svg" class="svg-img" alt="Icon"></i> sur le tableau de bord</li>
+        <li>Si vous sélectionnez l’entreprise, tous les lieus seront activés pour cet appareil. Vous pouvez également sélectionner par emplacement</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="faq-item">
+    <div class="faq-question">&nbsp;Où puis-je trouver mon code QR ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <p><b>Étape 1</b></p>
+      <ul>
+        <li>Activez votre appareil (voir "Comment activer mon appareil ?")</li>
+      </ul>
+      <p><b>Étape 2</b></p>
+      <ul>      
+        <li>Déconnectez-vous en haut à droite <i><img src="deconnect.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Vous verrez maintenant le code QR en grand <i><img src="qr.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez en haut à droite sur <i><img src="uurrooster.svg" class="svg-img" alt="Icon"></i> pour rendre l’horaire disponible</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Comment créer un horaire fixe ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>      
+        <li>Allez dans votre planning <i><img src="planning.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Cliquez sur l’onglet <span class="highlight-hash">Horaire fixe</span> en haut</li>
+        <li>Sélectionnez à droite <span class="highlight-section">Créer Un Horaire Fixe</span></li>
+        <li>Remplissez toutes les informations nécessaires</li>
+        <li>Faites défiler vers le bas et cliquez sur <span class="highlight-star">Sauvegarder</span></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Comment désigner mon responsable ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>      
+        <li>Cliquez sur l’icône de vos employés <i><img src="personeel.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche</li>
+        <li>Sélectionnez le nom de l’employé et cliquez à droite sur <i><img src="oog.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez l’onglet <span class="highlight-hash">Autorisations</span></li>
+        <li>Sélectionnez le rôle souhaité</li>
+      </ul>
+    </div>
+  </div>
+    
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Où puis-je modifier les paramètres de l’enregistrement du temps ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>      
+        <li>Cliquez sur "Entreprises" <i><img src="bedrijven.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche </li>
+        <li>Cliquez sur l’icône <i><img src="details.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez l’onglet <span class="highlight-hash">Paramètres</span></li>
+        <span class="highlight-green">➔ Seul l’administrateur a les autorisations pour cela !</span>
+      </ul>
+    </div>
+  </div>
+    
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Où puis-je consulter les contrats des employés ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>      
+        <li>Cliquez sur l’icône de vos employés <i><img src="personeel.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche</li>
+        <li>Sélectionnez le nom de l’employé et cliquez à droite sur <i><img src="oog.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez l’onglet <span class="highlight-hash">Documents</span>
+        <li>Cliquez sur l’icône <i><img src="oog.svg" class="svg-img" alt="Icon"></i> pour les consulter
+      </ul>
+    </div>
+  </div>
+    
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Consulter et/ou modifier les règles de votre entreprise <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>      
+        <li>Cliquez sur "Entreprises" <i><img src="bedrijven.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche </li>
+        <li>Cliquez sur l’icône <i><img src="details.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez l’onglet <span class="highlight-hash">Autorisations</span></li>
+        <li>Sélectionnez le rôle souhaité</li>
+      </ul>
+    </div>
+  </div>
+    
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Comment désigner mon responsable ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>      
+        <li>Cliquez sur l’icône de vos employés <i><img src="personeel.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche</li>
+        <li>Sélectionnez le nom de l’employé et cliquez à droite sur <i><img src="oog.svg" class="svg-img" alt="Icon"></i></li>
+        <li>Sélectionnez l’onglet <span class="highlight-hash">Règles</span></li>
+        <li>Sélectionnez le type de règle que vous souhaitez consulter</li>
+        <li>Cliquez sur le crayon <i><img src="wijzig.svg" class="svg-img" alt="Icon"></i> pour apporter des modifications</li>
+        <li>Décochez la valeur par défaut et entrez votre propre valeur</li>
+      </ul>
+    </div>
+  </div>
+    
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Approuver les heures de fin des employés <span class="plus">></span></div>
+    <div class="faq-answer">
+    <span class="highlight-green">Si vos employés oublient de s’enregistrer en sortie et doivent travailler le lendemain, ils peuvent entrer une heure de fin pour pouvoir scanner et commencer à travailler.<br>
+    En tant que manager, vous pouvez approuver cette heure en suivant ces étapes.</span>
+<ul>      
+      <li>Sélectionnez le Bilan mensuel <i><img src="maandoverzicht.svg" class="svg-img" alt="Icon"></i> dans la colonne de gauche</li>
+        <li>Vous verrez un compteur <i><img src="goedkeuren.svg" class="svg-img" alt="Icon"></i> si une action est nécessaire</li>
+        <li>Vous pouvez ajuster l’heure de fin via le crayon <i><img src="wijzig.svg" class="svg-img" alt="Icon"></i> ou la confirmer via la coche verte <i><img src="ok.svg" class="svg-img" alt="Icon"></i></li>
+      </ul>
+    </div>
+  </div>
+    
+  <div class="faq-item">
+    <div class="faq-question">&nbsp;Où puis-je vérifier mes déclarations DIMONA ? <span class="plus">></span></div>
+    <div class="faq-answer">
+      <ul>      
+        <li>Sélectionnez la tuile "DIMONA" <i><img src="dimonab.svg" class="svg-img" alt="Icon"></i> sur votre tableau de bord</li>
+        <li>Entrez une date</li>
+        <li>Sélectionnez le bouton <i><img src="details.svg" class="svg-img" alt="Icon"></i> pour voir les détails</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Add action icons to each FAQ answer
+      document.querySelectorAll('.faq-answer').forEach(answer => {
+        const actionIcons = document.createElement('div');
+        actionIcons.className = 'action-icons';
+        
+        // Share icon
+        const shareIcon = document.createElement('i');
+        shareIcon.className = 'fas fa-share action-icon';
+        shareIcon.title = 'Partager';
+        shareIcon.onclick = (e) => {
+          e.stopPropagation();
+          const question = answer.previousElementSibling.textContent.trim();
+          const content = answer.textContent.trim();
+          if (navigator.share) {
+            navigator.share({ title: question, text: content });
+          } else {
+            alert('Partage non pris en charge');
+          }
+        };
+        
+        // PDF icon
+        const pdfIcon = document.createElement('i');
+        pdfIcon.className = 'fas fa-file-pdf action-icon';
+        pdfIcon.title = 'Exporter en PDF';
+        pdfIcon.onclick = (e) => {
+          e.stopPropagation();
+          const question = answer.previousElementSibling.textContent.trim();
+          const win = window.open('', '_blank');
+          // Create temporary div with same styling as FAQ
+          const tempDiv = document.createElement('div');
+          tempDiv.style.padding = '20px';
+          tempDiv.style.backgroundColor = '#ffffff';
+          tempDiv.style.position = 'absolute';
+          tempDiv.style.left = '-9999px';
+          
+          const title = document.createElement('h2');
+          title.textContent = question;
+          title.style.fontFamily = 'Arial';
+          title.style.fontSize = '16pt';
+          title.style.color = '#000000';
+          title.style.marginBottom = '20px';
+          tempDiv.appendChild(title);
+          
+          const content = document.createElement('div');
+          content.className = 'faq-answer';
+          content.innerHTML = answer.innerHTML;
+          
+          // Remove action icons from the clone
+          const icons = content.querySelector('.action-icons');
+          if (icons) {
+            icons.remove();
+          }
+          
+          tempDiv.appendChild(content);
+          document.body.appendChild(tempDiv);
+          
+          // Generate PDF
+          html2canvas(tempDiv, {
+            scale: 2,
+            useCORS: true,
+            backgroundColor: '#ffffff'
+          }).then(canvas => {
+            const imgData = canvas.toDataURL('image/jpeg', 1.0);
+            const pdf = new window.jspdf.jsPDF({
+              orientation: 'p',
+              unit: 'pt',
+              format: 'a4'
+            });
+            
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+            const imgWidth = canvas.width;
+            const imgHeight = canvas.height;
+            const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+            
+            pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth * ratio, imgHeight * ratio);
+            pdf.save(`FAQ_${question.substring(0, 30).trim()}.pdf`);
+            
+            // Clean up
+            document.body.removeChild(tempDiv);
+          });
+        };
+        
+        // Print icon
+        const printIcon = document.createElement('i');
+        printIcon.className = 'fas fa-print action-icon';
+        printIcon.title = 'Imprimer';
+        printIcon.onclick = (e) => {
+          e.stopPropagation();
+          const question = answer.previousElementSibling.textContent.trim();
+          const win = window.open('', '_blank');
+          win.document.write(`
+            <html>
+              <head>
+                <title>FAQ Print</title>
+                <style>
+                  body {
+                    font-family: Arial, sans-serif;
+                    background-color: #ffffff;
+                    margin: 20px;
+                  }
+                  .faq-answer {
+                    font-family: Arial;
+                    font-size: 12pt;
+                    color: black;
+                    padding: 10px;
+                    line-height: 2.0;
+                    border-top: 1px solid #ddd;
+                  }
+                  .faq-answer ul {
+                    list-style: none;
+                    padding-left: 20px;
+                  }
+                  .faq-answer ul li::before {
+                    content: "•";
+                    color: #62BFB6;
+                    margin-right: 8px;
+                  }
+                  .highlight-star {
+                    font-weight: bold;
+                    font-size: 12pt;
+                    color: white;
+                    background-color: #62BFB6;
+                    padding: 2px 4px;
+                  }
+                  .highlight-blue {
+                    font-weight: bold;
+                    font-size: 12pt;
+                    color: white;
+                    background-color: #0A326B;
+                    padding: 2px 4px;
+                  }
+                  .highlight-hash {
+                    font-weight: normal;
+                    font-size: 12pt;
+                    color: black;
+                    background-color: #62BFB6;
+                    padding: 2px 4px;
+                  }
+                  .highlight-section {
+                    font-weight: bold;
+                    font-size: 12pt;
+                    color: white;
+                    background-color: #0A326B;
+                    padding: 2px 4px;
+                  }
+                  .highlight-green {
+                    font-weight: bold;
+                    font-size: 12pt;
+                    color: #007372;
+                    padding: 2px 4px;
+                  }
+                  .svg-img {
+                    width: auto;
+                    height: 30px;
+                    vertical-align: middle;
+                  }
+                </style>
+              </head>
+              <body>
+                <h2>${question}</h2>
+                <div class="faq-answer">${answer.innerHTML}</div>
+              </body>
+            </html>
+          `);
+          win.document.close();
+          win.print();
+        };
+        
+        actionIcons.appendChild(shareIcon);
+        actionIcons.appendChild(pdfIcon);
+        actionIcons.appendChild(printIcon);
+        answer.appendChild(actionIcons);
+      });
+
+      // Handle FAQ expand/collapse
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const actionIcons = answer.querySelector('.action-icons');
+          
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+            actionIcons.style.display = 'none';
+            this.querySelector('.plus').textContent = '>';
+          } else {
+            document.querySelectorAll('.faq-answer').forEach(a => {
+              a.style.display = 'none';
+              a.querySelector('.action-icons').style.display = 'none';
+            });
+            document.querySelectorAll('.plus').forEach(p => p.textContent = '>');
+            
+            answer.style.display = 'block';
+            actionIcons.style.display = 'block';
+            this.querySelector('.plus').textContent = 'v';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
