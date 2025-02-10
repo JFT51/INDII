@@ -82,7 +82,7 @@ h1 {
 
 .highlight-star {
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 10pt;
     color: white;
     background-color: #62BFB6;
     padding: 2px 4px;
@@ -90,7 +90,7 @@ h1 {
 
 .highlight-blue {
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 10pt;
     color: white;
     background-color: #0A326B;
     padding: 2px 4px;
@@ -98,7 +98,7 @@ h1 {
 
 .highlight-hash {
     font-weight: normal;
-    font-size: 12pt;
+    font-size: 10pt;
     color: black;
     background-color: #62BFB6;
     padding: 2px 4px;
@@ -106,7 +106,7 @@ h1 {
 
 .highlight-section {
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 10pt;
     color: white;
     background-color: #0A326B;
     padding: 2px 4px;
@@ -114,7 +114,7 @@ h1 {
 
 .highlight-green {
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 10pt;
     color: #007372;
     padding: 2px 4px;
 }
